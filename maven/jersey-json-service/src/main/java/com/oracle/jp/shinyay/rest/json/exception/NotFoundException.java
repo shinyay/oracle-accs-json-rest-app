@@ -1,4 +1,4 @@
-package com.sample.shinyay.rest.json;
+package com.oracle.jp.shinyay.rest.json;
 
 import javax.ws.rs.WebApplicationException;
 import javax.ws.rs.core.MediaType;

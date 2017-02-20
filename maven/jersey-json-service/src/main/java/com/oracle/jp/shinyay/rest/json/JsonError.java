@@ -1,8 +1,5 @@
-package com.sample.shinyay.rest.json;
+package com.oracle.jp.shinyay.rest.json;
 
-/**
- * Created by syanagih on 2016/12/31.
- */
 public class JsonError {
 
     private String type;

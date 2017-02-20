@@ -1,12 +1,11 @@
-package com.oracle.jp.shinyay.rest.json;
+package com.oracle.jp.shinyay.rest.json.exception;
+
+import com.oracle.jp.shinyay.rest.json.JsonError;
 
 import javax.ws.rs.WebApplicationException;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-/**
- * Created by syanagih on 2016/12/31.
- */
 public class NotFoundException extends WebApplicationException {
 
     public NotFoundException() {

@@ -1,4 +1,4 @@
-package com.sample.shinyay.rest.json;
+package com.oracle.jp.shinyay.rest.json;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
@@ -7,9 +7,6 @@ import java.util.Optional;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.function.Predicate;
 
-/**
- * Created by syanagih on 2016/12/31.
- */
 @Path("/members")
 public class MemberService {
 
@@ -32,7 +29,7 @@ public class MemberService {
         if (match.isPresent()) {
             return match.get();
         } else {
-            throw new NotFoundException(new JsonError("Error", "Member " + id + " not found"));
+            throw new com.oracle.jp.shinyay.rest.json.exception.NotFoundException(new JsonError("Error", "Member " + id + " not found"));
         }
     }
 
@@ -48,10 +45,11 @@ public class MemberService {
     @Path("{id}/update")
     @Produces(MediaType.APPLICATION_JSON)
     public Response updateMember(Member member) {
-        int matchIdx = 0;
+        int matchIdx;
         Optional<Member> match = mList.stream()
                 .filter(c -> c.getId() == member.getId())
                 .findFirst();
+
         if (match.isPresent()) {
             matchIdx = mList.indexOf(match.get());
             mList.set(matchIdx, member);

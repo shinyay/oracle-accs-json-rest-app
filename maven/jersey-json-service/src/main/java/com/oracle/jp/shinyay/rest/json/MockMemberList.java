@@ -1,4 +1,4 @@
-package com.sample.shinyay.rest.json;
+package com.oracle.jp.shinyay.rest.json;
 
 import java.util.concurrent.CopyOnWriteArrayList;
 
@@ -11,106 +11,91 @@ public class MockMemberList {
 
     static {
         mList.add(
-                new Member.MemberBuilder()
-                        .id()
-                        .lastName("岡部")
-                        .firstName("倫太郎")
-                        .age(18)
-                        .birthday("1991年12月14日")
-                        .height(177)
-                        .weight(59)
-                        .blood("A型")
+                new Member.Builder("倫太郎",
+                        "岡部",
+                        18,
+                        "1991年12月14日",
+                        177,
+                        59,
+                        "A型")
                         .build()
         );
 
         mList.add(
-                new Member.MemberBuilder()
-                        .id()
-                        .lastName("椎名")
-                        .firstName("まゆり")
-                        .age(16)
-                        .birthday("1994年2月1日")
-                        .height(152)
-                        .weight(45)
-                        .blood("O型")
+                new Member.Builder("まゆり",
+                        "椎名",
+                        16,
+                        "1994年2月1日",
+                        152,
+                        45,
+                        "O型")
                         .build()
         );
 
         mList.add(
-                new Member.MemberBuilder()
-                        .id()
-                        .lastName("橋田")
-                        .firstName("至")
-                        .age(19)
-                        .birthday("1991年5月19日")
-                        .height(164)
-                        .weight(98)
-                        .blood("B型")
+                new Member.Builder("至",
+                        "橋田",
+                        19,
+                        "1991年5月19日",
+                        164,
+                        98,
+                        "B型")
                         .build()
         );
 
         mList.add(
-                new Member.MemberBuilder()
-                        .id()
-                        .lastName("牧瀬")
-                        .firstName("紅莉栖")
-                        .age(18)
-                        .birthday("1992年7月25日")
-                        .height(160)
-                        .weight(45)
-                        .blood("A型")
+                new Member.Builder("紅莉栖",
+                        "牧瀬",
+                        18,
+                        "1992年7月25日",
+                        160,
+                        45,
+                        "A型")
                         .build()
         );
 
         mList.add(
-                new Member.MemberBuilder()
-                        .id()
-                        .lastName("桐生")
-                        .firstName("萌郁")
-                        .age(20)
-                        .birthday("1990年6月6日")
-                        .height(167)
-                        .weight(54)
-                        .blood("B型")
+                new Member.Builder("萌郁",
+                        "桐生",
+                        20,
+                        "1990年6月6日",
+                        167,
+                        54,
+                        "B型")
                         .build()
         );
 
         mList.add(
-                new Member.MemberBuilder()
-                        .id()
-                        .lastName("漆原")
-                        .firstName("るか")
-                        .age(16)
-                        .birthday("1993年8月30日")
-                        .height(151)
-                        .weight(44)
-                        .blood("A型")
+                new Member.Builder("るか",
+                        "漆原",
+                        16,
+                        "1993年8月30日",
+                        151,
+                        44,
+                        "A型")
                         .build()
         );
 
         mList.add(
-                new Member.MemberBuilder()
-                        .id()
-                        .lastName("フェイリス")
-                        .firstName("ニャンニャン")
-                        .age(17)
-                        .birthday("1993年4月3日")
-                        .height(143)
-                        .weight(43)
-                        .blood("AB型")
+                new Member.Builder("ニャンニャン",
+                        "フェイリス",
+                        17,
+                        "1993年4月3日",
+                        144,
+                        43,
+                        "AB型"
+                        )
                         .build()
         );
 
         mList.add(
-                new Member.MemberBuilder()
-                        .id()
-                        .lastName("阿万音")
-                        .firstName("鈴羽")
-                        .age(18)
-                        .birthday("2017年9月27日")
-                        .height(163)
-                        .weight(51)
-                        .blood("O型")
+                new Member.Builder("鈴羽",
+                        "阿万音",
+                        18,
+                        "2017年9月27日",
+                        163,
+                        51,
+                        "O型")
                         .build()
         );
     }

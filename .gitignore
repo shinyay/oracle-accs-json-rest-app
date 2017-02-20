@@ -1,2 +1,6 @@
 maven/*/.idea/
 maven/*/target/
+maven/jersey-json-service/dependency-reduced-pom.xml
+maven/jersey-json-service/jersey-json-service-*.zip
+maven/jersey-json-service/metafiles
+maven/jersey-json-service/metafiles/*

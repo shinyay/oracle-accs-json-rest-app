@@ -125,9 +125,9 @@
                 <version>1.0-SNAPSHOT</version>
                 <configuration>
                     <region>emea</region>
-                    <identitydomain>shinyayjan</identitydomain>>
-                    <user>shinyay</user>
-                    <password>yanaYANA0928</password>
+                    <identitydomain>[YOUR_IDENTITY_DOMAIN]</identitydomain>>
+                    <user>[YOUR_OPC_ID]</user>
+                    <password>[YOUR_OPC_PASSWORD]</password>
                     <storage>${scs.container}</storage>
                     <appName>JERSEY-JSON</appName>
                     <runtime>java</runtime>
@@ -147,9 +147,9 @@
                 <artifactId>scs-maven-plugin</artifactId>
                 <version>1.0</version>
                 <configuration>
-                    <identitydomain>shinyayjan</identitydomain>
-                    <user>shinyay</user>
-                    <password>yanaYANA0928</password>
+                    <identitydomain>[YOUR_IDENTITY_DOMAIN]</identitydomain>
+                    <user>[YOUR_OPC_ID]</user>
+                    <password>[YOUR_OPC_PASSWORD]</password>
                     <storage>${scs.container}</storage>
                     <object>${project.name}-${project.version}.zip</object>
                 </configuration>
